@@ -47,10 +47,7 @@ next-env.d.ts
 
 
 
-src/component/ProductDetails
-src/lib
-src/types
+
 src/app/auth
-src/app/product-details
 src/app/products
 
