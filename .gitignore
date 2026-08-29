@@ -48,6 +48,6 @@ next-env.d.ts
 
 
 
-src/app/auth
+src/app/auth/login
 
 
