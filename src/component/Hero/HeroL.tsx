@@ -68,7 +68,7 @@ export const HeroL = () => {
       <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-3 pt-2">
         <Link 
           href="/all-categories"
-          className="px-6 py-3 bg-[#2D3A34] hover:bg-[#2D3A34]/90 text-white font-semibold text-sm rounded-xl transition-all shadow-sm active:scale-95"
+          className="px-6 py-3  bg-[#2D3A34] hover:bg-[#2D3A34]/90 text-white font-semibold text-sm rounded-xl transition-all shadow-sm active:scale-95"
         >
           Shop Now &rarr;
         </Link>

@@ -58,14 +58,14 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
             {/* Bottom Section - Authentication Actions for Mobile */}
             <div className="flex flex-col gap-3 pt-6 border-t border-[#D1D8BE]">
               <Link
-                href="/login"
+                href="/auth/login"
                 onClick={onClose}
                 className="w-full text-center px-5 py-3 text-sm font-semibold text-[#2D3A34] bg-[#2D3A34]/10 hover:bg-[#2D3A34]/15 rounded-xl transition-colors"
               >
                 Login
               </Link>
               <Link
-                href="/signup"
+                href="/auth/signup"
                 onClick={onClose}
                 className="w-full text-center px-5 py-3 bg-[#2D3A34] hover:bg-[#2D3A34]/90 text-sm font-semibold text-[#EEEFE0] rounded-xl transition-all shadow-sm active:scale-95"
               >

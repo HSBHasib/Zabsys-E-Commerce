@@ -41,3 +41,17 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+
+
+
+
+
+src/component/All-Products
+src/component/ProductDetails
+src/lib
+src/types
+src/app/auth
+src/app/product-details
+src/app/products
+

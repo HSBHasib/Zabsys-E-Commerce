@@ -40,13 +40,13 @@ const Navbar = () => {
       {/* RightSide - Desktop Authentication Actions */}
       <div className="hidden lg:flex items-center gap-2.5">
         <Link 
-          href="/login" 
+          href="/auth/login" 
           className="px-5 py-2.5 text-sm font-semibold text-[#2D3A34] bg-[#2D3A34]/10 hover:bg-[#2D3A34]/15 rounded-xl transition-colors"
         >
           Login
         </Link>
         <Link 
-          href="/signup" 
+          href="/auth/signup" 
           className="px-5 py-2.5 bg-[#2D3A34] hover:bg-[#2D3A34]/90 text-sm font-semibold text-[#EEEFE0] rounded-xl transition-all shadow-sm active:scale-95"
         >
           Sign Up

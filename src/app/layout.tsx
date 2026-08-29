@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Noto_Serif } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/component/Navbar/Navbar";
+import Footer from "@/component/Footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 const notoSerif = Noto_Serif({
-  variable: '--font-noto-serif', 
+  variable: "--font-noto-serif",
 });
 
 export const metadata: Metadata = {
@@ -13,11 +16,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${notoSerif.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col bg-[#EEEFE0]">{children}</body>
+    <html lang="en" className={`${notoSerif.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col bg-[#EEEFE0]">
+        <Navbar />
+        {children}
+        <Footer />
+
+        <Toaster />
+      </body>
     </html>
   );
 }
