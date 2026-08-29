@@ -47,7 +47,6 @@ next-env.d.ts
 
 
 
-src/component/All-Products
 src/component/ProductDetails
 src/lib
 src/types
