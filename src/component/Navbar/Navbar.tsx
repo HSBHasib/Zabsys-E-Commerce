@@ -15,7 +15,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className="w-full lg:h-20 bg-[#EEEFE0] border-b border-[#D1D8BE] sticky top-0 z-40 px-4 md:px-8 lg:px-12 py-4 lg:py-0 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 lg:gap-8">
+    <header className="w-full max-w-7xl mx-auto lg:h-20 bg-[#EEEFE0] border-b border-[#D1D8BE] sticky top-0 z-40 px-4 md:px-8 lg:px-12 py-4 lg:py-0 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 lg:gap-8">
       
       {/* Container for Top Row on Mobile */}
       <div className="flex items-center justify-between w-full lg:w-auto">

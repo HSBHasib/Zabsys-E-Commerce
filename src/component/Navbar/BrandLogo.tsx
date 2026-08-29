@@ -11,7 +11,7 @@ const BrandLogo = () => {
           src="/assets/logo.png" 
           alt="Verda Logo" 
           width={26} 
-          height={26} 
+          height={26}
           className="object-contain"
         />
       </div>
