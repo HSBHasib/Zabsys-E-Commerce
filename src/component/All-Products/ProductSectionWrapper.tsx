@@ -18,9 +18,9 @@ const ProductSectionWrapper = ({
   children,
 }: ProductSectionWrapperProps) => {
   return (
-    <section className="my-10 w-full">
+    <div className="my-10 w-full">
 
-      {/* Section Header */}
+      {/* Header */}
       <div className="mb-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
           {icon && (
@@ -46,7 +46,7 @@ const ProductSectionWrapper = ({
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {children}
       </div>
-    </section>
+    </div>
   );
 };
 
