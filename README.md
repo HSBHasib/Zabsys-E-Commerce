@@ -30,20 +30,12 @@ The platform features secure JWT-based authentication, category-driven product b
 - React Icons
 - cookies-next (Client-Side Cookie Management)
 
-## Backend (API)
-- Node.js
-- Express.js
-- MongoDB (RESTful API)
-
 ## Authentication & Security
 - JWT Token-Based Authentication
 - Secure Cookie Session Storage (`auth_token`)
 - API Key (`x-api-key`) Protected Endpoints
 - Client-Side Form Validation & Guard Rails
 - Rate-Limit (429) Error Handling
-
-## Database
-- MongoDB (Collection-based product catalog)
 
 ---
 
@@ -156,4 +148,4 @@ During this project, I pushed my technical limits and gained practical experienc
 - Mern Stack Developer & Aspiring Software Engineer
 - Gazipur, Dhaka, Bangladesh
 - GitHub: [@HSBHasib](https://github.com/HSBHasib)
-- Portfolio: [hasib-portfolio-silk.vercel.app](https://hasib-portfolio-silk.vercel.app)
+- Portfolio: [Hasibur Rahman Portfolio](https://hasib-portfolio-silk.vercel.app)
