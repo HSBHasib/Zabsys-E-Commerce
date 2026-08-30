@@ -1,31 +1,21 @@
 import { CollectionCategory, Product } from "@/types/product";
-import { serverFetch } from "../core/server";
+import { protectedFetch } from "../core/server";
 
-// 1. Fetch All Products by Category
-export async function getProductsByCategory(
-  category: CollectionCategory,
-  limit?: number
-): Promise<Product[]> {
+// Fetch All Products by Category
+export const getProductsByCategory = async (category: CollectionCategory, limit?: number): Promise<Product[]> => {
   try {
-    const data = await serverFetch<Product[]>(`${category}/objects`);
-    return limit ? data.slice(0, limit) : data;
-  } catch (error) {
-    console.error(`Error fetching category [${category}]:`, error);
+    const data = await protectedFetch<Product[]>(`/collections/${category}/objects`);
+    return limit ? data.slice(0, limit) : data; 
+  } catch {
     return [];
   }
 }
 
-
 // Single Product Fetcher by Category and ID
-export async function getSingleProduct(
-  category: CollectionCategory,
-  id: string
-): Promise<Product | null> {
+export const getSingleProduct = async (category: CollectionCategory, id: string): Promise<Product | null> => {
   try {
-    const data = await serverFetch<Product>(`${category}/objects/${id}`);
-    return data;
-  } catch (error) {
-    console.error(`Error fetching single product [ID: ${id}] in [${category}]:`, error);
-    return null; 
+    return await protectedFetch<Product>(`/collections/${category}/objects/${id}`) || null;
+  } catch {
+    return null;
   }
 }

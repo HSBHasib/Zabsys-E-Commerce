@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { FiSearch, FiChevronDown } from "react-icons/fi";
 import { Dropdown, Button, Label } from "@heroui/react";
-import { CATEGORIES } from "@/lib/Data/Categories";
+import { CATEGORIES } from "@/lib/data/Categories";
 
 export const NavSearchBar = () => {
   const router = useRouter();
