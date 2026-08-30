@@ -10,7 +10,6 @@ export const NavSearchBar = () => {
   const router = useRouter();
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedLabel, setSelectedLabel] = useState("All Categories");
-  const [searchQuery, setSearchQuery] = useState("");
 
   // Category change & routing handle
   const handleCategorySelect = (key: React.Key) => {
@@ -30,17 +29,9 @@ export const NavSearchBar = () => {
     }
   };
 
-  // Search Submit Handler
-  const handleSearch = (e?: React.FormEvent) => {
-    if (e) e.preventDefault();
-    if (!searchQuery.trim()) return;
-
-    router.push(`/products/search?q=${encodeURIComponent(searchQuery)}`);
-  };
-
+  
   return (
     <form
-      onSubmit={handleSearch}
       className="relative flex h-12 w-full items-center overflow-hidden rounded-full border border-[#D1D8BE] bg-[#D1D8BE]/40 transition-all duration-200 focus-within:border-[#819A91] focus-within:ring-1 focus-within:ring-[#819A91]/50 lg:max-w-2xl"
     >
       {/* Dropdown */}

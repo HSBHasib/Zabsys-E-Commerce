@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { deleteCookie } from "cookies-next";
 import toast from "react-hot-toast";
-import { AuthUser } from "@/types/user";
+import { AuthUser } from "@/types/auth";
 
 export const useAuth = () => {
   const [user, setUser] = useState<AuthUser | null>(null);

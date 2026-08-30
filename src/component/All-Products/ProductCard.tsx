@@ -23,12 +23,10 @@ const ProductCard = ({ product, category }: ProductCardProps) => {
 
         {/* Tag & Wishlist */}
         <div className="flex items-center justify-between z-10">
-          {data?.tag ? (
+          {data?.tag && (
             <span className="absolute left-2 top-2 rounded-md bg-[#A5B39A]/75 px-2.5 py-1 text-xs font-bold capitalize tracking-wide text-[#233522]">
               {data.tag}
             </span>
-          ) : (
-            <div />
           )}
           <button
             type="button"

@@ -1,8 +1,8 @@
 import React from "react";
-import { notFound } from "next/navigation";
+import NotFound from "@/app/not-found";
 import { CollectionCategory } from "@/types/product";
 import { getSingleProduct } from "@/lib/api/products";
-import ProductDetailsContainer from "@/app/product-details/[id]/page";
+import ProductDetailsContainer from "@/component/ProductDetails/ProductDetailsContainer";
 
 interface DetailsPageProps {
   params: Promise<{
@@ -22,7 +22,7 @@ export default async function ProductDetailsPage({ params }: DetailsPageProps) {
 
   // If product not found, trigger 404
   if (!product) {
-    notFound();
+    return <NotFound />;
   }
 
   return (

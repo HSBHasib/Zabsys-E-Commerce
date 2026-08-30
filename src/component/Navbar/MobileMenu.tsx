@@ -52,15 +52,15 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                 </div>
 
                 {/* Navigation Links */}
-                <nav className="flex flex-col gap-4 mt-8 font-medium text-[#2D3A34]">
+                {/* <nav className="flex flex-col gap-4 mt-8 font-medium text-[#2D3A34]">
                   <Link
-                    href="/categories"
+                    href="/"
                     onClick={onClose}
                     className="py-2 transition-colors bg-[#E3E5D2] hover:bg-[#D5D8C1]/70 active:bg-[#D5D8C1]/70 p-3 rounded-lg"
                   >
                     All Categories
                   </Link>
-                </nav>
+                </nav> */}
               </div>
 
               {/* Bottom Section - Authentication Actions for Mobile */}

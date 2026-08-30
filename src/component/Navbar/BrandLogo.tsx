@@ -15,7 +15,7 @@ const BrandLogo = () => {
           className="object-contain"
         />
       </div>
-      <span className="font-['Plus_Jakarta_Sans'] font-bold text-xl tracking-tight text-[#2D3A34]">
+      <span className="font-bold text-xl tracking-tight text-[#2D3A34]">
         Verda
       </span>
     </Link>

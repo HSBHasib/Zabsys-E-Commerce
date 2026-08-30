@@ -10,7 +10,7 @@ interface ProductGalleryProps {
 }
 
 const ProductGallery = ({ images = [], productName }: ProductGalleryProps) => {
-  const imageList = images.length > 0 ? images : ["/placeholder.jpg"];
+  const imageList = images.length > 0 ? images : ["/assets/logo.png"];
   const [selectedImage, setSelectedImage] = useState(imageList[0]);
 
   return (
