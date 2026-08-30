@@ -63,10 +63,7 @@ const SignIn = () => {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[#EBEFE5] px-4 py-12">
-      {/* Toast Renderer Component */}
-      <Toaster position="top-center" reverseOrder={false} />
-
+    <div className="flex min-h-screen items-center justify-center px-4 py-12">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
