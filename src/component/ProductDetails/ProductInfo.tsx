@@ -28,27 +28,27 @@ const ProductInfo = ({ product, category }: ProductInfoProps) => {
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
-      className="flex flex-col gap-6 w-full"
+      className="flex flex-col gap-4 w-full"
     >
       {/* Category Tag */}
       <div>
-        <span className="rounded-full bg-[#DADDCE] px-3.5 py-1 text-sm font-bold uppercase tracking-wider text-[#1D331C]">
+        <span className="rounded-full bg-[#DADDCE] px-3.5 py-1 text-[10px] font-bold uppercase tracking-wider text-[#1D331C]">
           {category.replace("-", " ")}
         </span>
       </div>
 
       {/* Title */}
       <div className="flex flex-col gap-1">
-        <h1 className="text-3xl font-bold text-[#1D331C] md:text-4xl">
+        <h1 className="text-3xl font-bold text-[#1D331C]">
           {product.name}
         </h1>
       </div>
 
       {/* Price & Stock status */}
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-1">
         {/* Price */}
         <div className="flex items-baseline gap-3">
-          <span className="text-3xl tracking-tighter font-bold text-[#1D331C]">
+          <span className="text-2xl tracking-tighter font-bold text-[#1D331C]">
             {defaultPrice}
           </span>
         </div>

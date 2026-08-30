@@ -5,7 +5,7 @@ import Link from 'next/link'
 const BrandLogo = () => {
   return (
     <>
-     <Link href="/" className="inline-flex items-center gap-3 select-none group">
+     <Link href="/" className="inline-flex items-center gap-2.5 select-none group">
       <div className="w-10 h-10 rounded-xl bg-[#2D3A34] flex items-center justify-center overflow-hidden">
         <Image 
           src="/assets/logo.png" 

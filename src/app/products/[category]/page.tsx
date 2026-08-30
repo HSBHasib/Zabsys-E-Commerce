@@ -39,7 +39,7 @@ const CategoryPage = async ({ params }: PageProps) => {
           </div>
         </div>
 
-        {/* Existing ProductCard Grid Render */}
+        {/* Existing ProductCard */}
         {products.length === 0 ? (
           <div className="rounded-3xl border border-[#D5DDD0] bg-[#D4DDD0]/50 p-12 text-center font-medium text-[#4B5E49]">
             No items available in this category right now.

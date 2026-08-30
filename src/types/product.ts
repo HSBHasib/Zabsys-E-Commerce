@@ -25,3 +25,4 @@ export type CollectionCategory =
   | "meat"
   | "fruits"
   | "fish-seafood";
+  

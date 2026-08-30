@@ -41,21 +41,6 @@ const Navbar = () => {
       </div>
 
       {/* RightSide - Desktop Authentication Actions */}
-      {/* <div className="hidden lg:flex items-center gap-2.5">
-        <Link 
-          href="/auth/login" 
-          className="px-5 py-2.5 text-sm font-semibold text-[#2D3A34] bg-[#2D3A34]/10 hover:bg-[#2D3A34]/15 rounded-xl transition-colors"
-        >
-          Login
-        </Link>
-        <Link 
-          href="/auth/signup" 
-          className="px-5 py-2.5 bg-[#2D3A34] hover:bg-[#2D3A34]/90 text-sm font-semibold text-[#EEEFE0] rounded-xl transition-all shadow-sm active:scale-95"
-        >
-          Register
-        </Link>
-      </div> */}
-
       <div className="hidden lg:flex items-center gap-4">
         {isAuthenticated ? (
           <div className="flex items-center gap-3">
@@ -78,13 +63,13 @@ const Navbar = () => {
           <div className="flex items-center gap-3">
             <Link
               href="/auth/login"
-              className="text-xs font-bold text-[#1D331C] hover:underline"
+              className="px-5 py-2.5 text-sm font-semibold text-[#2D3A34] bg-[#2D3A34]/10 hover:bg-[#2D3A34]/15 rounded-xl transition-colors"
             >
               Login
             </Link>
             <Link
-              href="/auth/register"
-              className="rounded-2xl bg-[#1D331C] px-4 py-2 text-xs font-semibold text-white transition-all hover:bg-[#152614]"
+              href="/auth/signup"
+              className="px-5 py-2.5 bg-[#2D3A34] hover:bg-[#2D3A34]/90 text-sm font-semibold text-[#EEEFE0] rounded-xl transition-all shadow-sm active:scale-95"
             >
               Register
             </Link>
@@ -99,3 +84,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
